@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".Principales.Principal"
+    >
+
+      <!-- Toolbar -->
+      <android.support.v7.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="150dp"
+        android:background="?attr/colorPrimary"
+        app:popupTheme="@style/ThemeOverlay.AppCompat.Light"
+        app:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar">
+
+          <ImageView android:id="@+id/imagen"
+              android:src="@drawable/ata"
+              android:layout_width="match_parent"
+              android:layout_height="wrap_content"
+              android:scaleType="fitCenter"
+              android:layout_gravity="fill_horizontal"
+              android:adjustViewBounds="true" />
+
+      </android.support.v7.widget.Toolbar>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="bottom"
+            android:orientation="vertical">
+            <Button
+                android:id="@+id/btnMapa"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:text="Ubicame" />
+
+
+
+            <android.support.design.widget.BottomNavigationView
+                android:id="@+id/boton_navegacion"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="bottom"
+                app:itemBackground="@color/colorPrimary"
+                app:itemIconTint="@drawable/nav_item_color_state"
+                app:itemTextColor="@drawable/nav_item_color_state"
+                app:menu="@menu/menu" />
+
+        </LinearLayout>
+
+</LinearLayout>
